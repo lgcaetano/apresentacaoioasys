@@ -61,6 +61,7 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 100px 0px 100px 0px ;
+  transition: background-color var(--expand-delay);
 }
 
 .intro{

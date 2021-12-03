@@ -16,6 +16,8 @@ export default function FirstQuestion(props) {
             </div>
             <i className="fas fa-arrow-down text-9xl mt-20"></i>
             <Country name='Japão'></Country>
+            <Country name='Reino_Unido'></Country>
+            <Country name='Índia'></Country>
         </div>
     )
 }
