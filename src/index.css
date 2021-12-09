@@ -54,12 +54,14 @@
 
 body {
   margin: 0;
+  padding: 0%;
   color: white;
   background-color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  max-width: 100%;   
   padding: 100px 0px 100px 0px ;
   transition: background-color var(--expand-delay);
 }
@@ -79,6 +81,9 @@ body {
 .max-w-half{
   max-width: 50vw;
 }
+.max-w-title{
+  max-width: 80vw;
+}
 
 .expand{
   animation-name: expand;
@@ -88,4 +93,37 @@ body {
 .expand-text{
   animation-name: expand-text;
   animation-duration: var(--expand-delay);
+}
+
+.text-bkg-hover:hover{
+  color: var(--main-color)
+}
+
+.sudoku-h{
+  height: 500px;
+}
+
+.sudoku-w {
+  width: 400px;
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.w-almost-screen{
+  width: 95vw;
+}
+
+
+@media(max-width: 1100px){
+  .title{
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 740px){
+  .title{
+    font-size: 1.5rem;
+  }
 }
