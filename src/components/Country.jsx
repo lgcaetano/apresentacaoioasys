@@ -76,7 +76,7 @@ export default function Country(props){
         if(entries[0].isIntersecting){
             changeBackgroundColor()
         } 
-    }), observerOptions)
+    }, observerOptions))
 
     useEffect(() => {
         observerRef.current.observe(document.querySelector(`[countryname=${props.name}]`))
@@ -85,7 +85,7 @@ export default function Country(props){
 
     return (
         <div className="w-full flex justify-center">
-            <div className="w-72 border-4 border-white my-24 rounded-md overflow-hidden flex flex-col relative" countryname={props.name}>
+            <div className="w-72 border-4 border-white my-24 rounded-md overflow-hidden flex flex-col relative bg-gree" countryname={props.name}>
                 <Carousel showThumbs={false} showStatus={false} axis="horizontal" showArrows={true} dynamicHeight={false}>
                     {generateImages(props.name)}
                 </Carousel>
